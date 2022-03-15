@@ -5,7 +5,9 @@
   "main": "demo.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --no-cache",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage tests/unit",
     "start": "node server/index.js",
     "live-reload": "nodemon server/index.js"
   },
@@ -24,6 +26,7 @@
   },
   "homepage": "https://github.com/Manfrin92/sportify-wendell#readme",
   "devDependencies": {
+    "jest": "^27.5.1",
     "nodemon": "^2.0.15"
   },
   "dependencies": {
