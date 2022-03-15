@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node server/index.js",
+    "live-reload": "nodemon server/index.js"
   },
   "engines": {
     "node": "17"
@@ -21,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/Manfrin92/sportify-wendell/issues"
   },
-  "homepage": "https://github.com/Manfrin92/sportify-wendell#readme"
+  "homepage": "https://github.com/Manfrin92/sportify-wendell#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "pino": "^7.8.0",
+    "pino-pretty": "^7.5.3"
+  }
 }
