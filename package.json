@@ -9,7 +9,8 @@
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --no-cache --watchAll",
     "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --no-cache --coverage tests/unit",
     "start": "node server/index.js",
-    "live-reload": "nodemon server/index.js"
+    "live-reload": "nodemon --legacy-watch server/index.js",
+    "live-reload:docker": "docker-compose up --build live-reload"
   },
   "engines": {
     "node": "17"

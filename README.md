@@ -71,4 +71,9 @@ Acesse a [**comunidade exclusiva no discord**](https://bit.ly/semanajsexpert-dis
   - Ex: ` "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand",`
 
 - Rodei `npm test` mas nada acontece, o que fazer?
+
   - Verifique a versão do seu Node.js. Estamos usando na versão 17. Entre no [site do node.js](https://nodejs.org) e baixe a versão mais recente.
+
+  ### Docker commands
+
+  `docker exec -it CONTAINERID bash`
